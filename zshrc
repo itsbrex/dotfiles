@@ -1,8 +1,8 @@
 # Fig pre block. Keep at the top of this file.
 . "$HOME/.fig/shell/zshrc.pre.zsh"
 # Ensure brew can be found
-# Issue seen on m1 max mbp
-[[ -f /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
+# # Issue seen on m1 max mbp
+# [[ -f /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
 
 # Setup TTY for GPG
 # export GPG_TTY=$(tty)

@@ -17,6 +17,10 @@ else
 fi
 echo ""
 
+# Run these two commands in your terminal to add Homebrew to your PATH:
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/hack/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Install Rust
 echo "🦀 Rust"
 which -s rustup
