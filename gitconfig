@@ -1,0 +1,32 @@
+[alias]
+  prettylog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  default = !git checkout $(git remote show origin | sed -n '/HEAD branch/s/.*: //p')
+
+[color]
+  ui = true
+
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+
+[diff]
+	tool = Kaleidoscope
+
+[github]
+	user = thiskevinwang
+
+[push]
+	default = tracking
+
+[user]
+	name = Kevin Wang
+	email = kwangsan@gmail.com
+	signingkey = 9E3A227DFAE539A7
+
+[commit]
+	gpgsign = true
+[pager]
+	branch = false
+	diff = false
+	log = false
+[gpg]
+	program = /opt/homebrew/bin/gpg

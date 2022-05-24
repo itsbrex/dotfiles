@@ -1,0 +1,100 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+# A minimal left prompt
+#format = """$all"""
+
+# move the rest of the prompt to the right
+#right_format = """$all"""
+
+# Replace the "❯" symbol in the prompt with "Λ"
+[character]      # The name of the module we are configuring is "character"
+success_symbol = "[λ](bold green) "
+error_symbol = "[χ](bold red) "
+vicmd_symbol = "[V](bold green) "
+
+[git_status]
+format = '([ \[$all_status$ahead_behind\]]($style) )'
+ahead = "${count}"
+diverged = "⇕${behind_count} ${ahead_count}"
+behind = "${count}"
+modified = "${count} "
+staged = "${count} "
+
+[kubernetes]
+symbol = "☸ "
+format = '[$symbol$context( \($namespace\))]($style) in '
+disabled = false
+
+### Presets
+[aws]
+symbol = "  "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[directory]
+read_only = " "
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[package]
+symbol = " "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[shlvl]
+symbol = " "
+
+[swift]
+symbol = "ﯣ "
